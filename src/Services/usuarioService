@@ -1,0 +1,21 @@
+import { cliente } from "../../supabase/client";
+
+const UsuarioService = {
+    
+  async obtenerTodos() {
+    try {
+      const { data, error } = await cliente.from("usuario").select("*");
+
+      if (error) {
+        throw error;
+      }
+
+      return data || [];
+    } catch (error) {
+      throw error;
+    }
+  },
+
+};
+
+export default UsuarioService;

@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+/* En 'CrearAgenda.css' */
+
+.tarjeta-agenda {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.info-medico {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.day-hours {
+  margin-bottom: 16px;
+}
